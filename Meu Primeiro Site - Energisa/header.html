@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: orangered;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      .header-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo h1 {
+        font-size: 24px;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      .nav-links li a:hover {
+        color: black;
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .search-bar input {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+      }
+
+      .search-bar button {
+        padding: 8px 12px;
+        background-color: #f0c040;
+        border: none;
+        border-radius: 5px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .search-bar button:hover {
+        background-color: #e5a937;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1><a href="#">BookStore</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#catalog">Catálogo</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar livros..." />
+          <button type="submit">Buscar</button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

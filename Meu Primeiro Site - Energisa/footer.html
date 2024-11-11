@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Exemplo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links, .footer-social, .footer-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-links h3, .footer-social h3, .footer-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+}
+
+.footer-links ul li, .footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+  color: #ff9900;
+}
+
+.footer-info p {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Serviço</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <h3>Endereço</h3>
+        <p>Rua Exemplo, 123 - Cidade, Estado</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
